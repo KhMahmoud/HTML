@@ -3,32 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="app.css">
+    <title>Exercise</title>
 </head>
 <body>
+    <style>
+        /* div:nth-child(1){
+            margin: 3rem;
+            border: 1px solid black;
+            padding: 20px;
+            padding-top: 30px;
+            padding-left: 50px;
+        } */
+        div:nth-child(2){
+            margin-top: 300px;
+            margin: 2rem;
+            margin-left: 200px;     
+        }
 
-    <div id="Calculator">
-        <input id="display" readonly>
-        <button class="operator" onclick="calculate('+')">+</button>
-        <button class="operator" onclick="calculate('9')">9</button>
-        <button class="operator" onclick="calculate('8')">8</button>
-        <button class="operator" onclick="calculate('7')">7</button>
-        <button class="operator" onclick="calculate('-')">-</button>
-        <button class="operator" onclick="calculate('6')">6</button>
-        <button class="operator" onclick="calculate('5')">5</button>
-        <button class="operator" onclick="calculate('4')">4</button>
-        <button class="operator" onclick="calculate('*')">*</button>
-        <button class="operator" onclick="calculate('3')">3</button>
-        <button class="operator" onclick="calculate('2')">2</button>
-        <button class="operator" onclick="calculate('1')">1</button>
-        <button class="operator" onclick="calculate('/')">/</button>
-        <button class="operator" onclick="calculate('0')">0</button>
-        <button class="operator" onclick="calculate('.')">.</button>
-        <button class="operator" onclick="findTheResult('=')">=</button>
-        <button class="operator" onclick="clear('C')">C</button>
-    </div>
+        #back-button{
+            margin-left:13rem ;
+            padding: 15px;
+            box-shadow: 1px 2px 1px red;
+            cursor: pointer;
+        }
+        #back-button:active{
+            padding: 10px;
+            transition: 0.7s;
+        }
+        #next-button{
+            box-shadow: 3px 3px 3px rgb(57, 235, 255);
+            cursor: pointer;
+        }
+        #next-button:active{
+            color: blueviolet;
+            background-color: rgb(255, 255, 180);
+            border-radius: 20px;
+            padding: 10px;
+            margin-top: 3px;
+            margin-left: 3px;
+            box-shadow: none;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            padding-left: 30px;
+            padding-right: 30px;
+            transition: 0.5s;
+        }
+        #url{
+            text-decoration: none;
+            border: 2px dotted;
+            margin-top: 40px;
+            margin-left: auto;
+            padding: 10px;
+            border-radius: 7px;
+            background-color: rgb(183, 254, 230);
+            color: black;
+        }
+        #url:active{
+            background-color: black;
+            color: white;
+        }
+        #links{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        h2{
+            margin-top: 30px;
+        }
+        #dollar{
+            color: green;
+        }
+        .cart{
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 10px;
+            background-color: #beffe9;
+            color: blue;
+        }
+        .purchase{
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 10px;
+            background-color: #beffe9;
+            color: blue;
+            transition: 1s;
+        }
+        .purchase:hover{
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            opacity: 0.5;
+            box-shadow: 3px 3px 3px red;
+        }
+        .purchase:active{
+            color: red;
+            background-color: rgb(186, 255, 118);
+            transition: opacity 1s;
+        }
+        .cart:active{
+            color: red;
+            background-color: rgb(186, 255, 118);
+        }
+    </style>
+
+    <div>
+
+        <a id="url" href="http://127.0.0.1:5500/app.html">Back to Amazon</a>
+        <h2>Nike Black Running Shoes</h2>
+        <h3 id="dollar">$39 - in stock.</h3>
+        <p>Free delivery tomorrow</p>
     
-    <script src="app.js"></script>
+        <button class="cart">Add to cart</button>
+        <button class="purchase">Buy Now</button>
+
+    </div>
+
+    <div>
+
+        <button id="back-button">Back</button>
+
+        <a id="links" href="http://127.0.0.1:5500/app.html">1</a>
+        <a id="links" href="http://127.0.0.1:5500/app.html">2</a>
+        <a id="links" href="http://127.0.0.1:5500/app.html">3</a>
+        <a id="links" href="http://127.0.0.1:5500/app.html">4</a>
+        <a id="links" href="http://127.0.0.1:5500/app.html">5</a>
+
+        <button id="next-button">Next</button>
+
+    </div>
 </body>
-</html> 
+</html>
