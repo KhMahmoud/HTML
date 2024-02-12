@@ -117,6 +117,39 @@
         #shop:hover{
             text-decoration: underline;
         }
+        #name,#user{
+            margin: 12px;
+            display: block;
+            display: flex;
+        }
+        #yes,#no{
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 7px;
+            cursor: pointer;
+            background-color: #beffe9;
+            color: black;
+        }
+        #yes:active,#no:active{
+            background-color: rgb(157, 255, 154);
+            color: blue;
+            padding: 8px;
+            transition: 1s;
+        }
+
+        .goole{
+            display: block;
+            width: 60%;
+            margin: auto;
+            width: 800px;
+            height: 300px;
+            
+        }
+        #review{
+            text-align:center
+            
+        }
     </style>
 
     <div>
@@ -142,6 +175,23 @@
 
         <button id="next-button">Next</button>
 
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="user" placeholder="UserName">
+        <label for="Answer">Answer Yes if the page work's fine otherwise select</label>
+        <select name="Answer" id="Answer">
+            <option value="">Yes</option>
+            <option value="">No</option>
+        </select>
+
+        <label for="game">is the red dead redemption two fun to play with</label>
+        <button id="yes" name="game">Yes</button>
+        <button id="no" name="game">No</button>
+
+    </div>
+
+    <div  id="review">
+        <input type="text" id="google" placeholder="Search Google">
+        <img class="goole" src="Google_2015_logo.svg.webp" alt="">
     </div>
     <footer>
         <p id="holiday">
