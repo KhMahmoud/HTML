@@ -7,19 +7,51 @@
 </head>
 <body>
     <style>
-        /* #container{
-
-        } */
-
+        input{
+            margin-top: 20px;
+            /* margin-right: 10px; */
+            border: 2px solid gray;
+            border-radius: 15px;
+            border-width: 4px;
+            padding: 5px;
+        }
+        .email{
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .email{
+            width: 360px;
+        }
+        button{
+            background-color: rgb(94, 161, 255);
+            color: white;
+            cursor: pointer;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top:15px ;
+            padding-bottom: 15px;
+            width: 300px;
+            border-radius:15px;
+            transition: 1s;
+        }
+        button:active{
+            display: block;
+            padding-top:30px ;
+            padding-right: 50px;
+            padding-bottom: 30px;
+        }
     </style>
     
 
     <div id="div">
-        <div class="container">
-            <input id="first" type="text" placeholder="first name">
-            <input id="surname" type="text" placeholder="surname name">
+        
+        <input id="first" type="text" placeholder="first name">
+        <input id="surname" type="text" placeholder="surname name">
+        <div class="email">
+            <input class="email" type="text" placeholder="Email">
         </div>
-        <input id="Email" type="text" placeholder="Email">
+        
+
         <button>Sign Up</button>
     </div>
 </body>
