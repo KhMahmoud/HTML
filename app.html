@@ -3,56 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up form</title>
+    <title>Original Youtube Copy</title>
 </head>
 <body>
     <style>
-        input{
-            margin-top: 20px;
-            /* margin-right: 10px; */
-            border: 2px solid gray;
-            border-radius: 15px;
-            border-width: 4px;
+        *{
+            background-color: rgb(233, 229, 229);
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            text-align: center;
+            text-decoration: dotted;
+            text-shadow: 1rem;
+            font-weight: bold;
             padding: 5px;
         }
-        .email{
-            margin-top: 5px;
-            margin-bottom: 15px;
+        .container{
+            display: inline-block;
+            margin-left: 10px;
         }
-        .email{
-            width: 360px;
+        .images{
+            width: 275px;
+            height: 183px;
         }
-        button{
-            background-color: rgb(94, 161, 255);
-            color: white;
-            cursor: pointer;
-            padding-right: 30px;
-            padding-left: 30px;
-            padding-top:15px ;
-            padding-bottom: 15px;
-            width: 300px;
-            border-radius:15px;
-            transition: 1s;
+        #Author,#published{
+            font-size: 12px;
+            color: rgb(67, 64, 64);
         }
-        button:active{
-            display: block;
-            padding-top:30px ;
-            padding-right: 50px;
-            padding-bottom: 30px;
-        }
+        /* #Author{
+            margin-bottom: 5px;
+            margin-top: 10px;
+        } */
+
     </style>
-    
-
-    <div id="div">
-        
-        <input id="first" type="text" placeholder="first name">
-        <input id="surname" type="text" placeholder="surname name">
-        <div class="email">
-            <input class="email" type="text" placeholder="Email">
-        </div>
-        
-
-        <button>Sign Up</button>
+    <h1>Welcome to Original YouTube</h1>
+    <div class="container">
+        <img class="images" src="imgs/1.jpeg" alt="">
+        <p>The sunset is beautiful on the sea!</p>
+        <p id="Author">Mahmoud Kh</p>
+        <p id="published">7 months ago &#x2022; 6.7M </p>
+    </div>
+    <div class="container">
+        <img class="images" src="imgs/123.jpeg" alt="">
+        <p>Tree in circle on flip down shape</p>
+        <p id="Author">Mark Zen</p>
+        <p id="published">1 month ago &#x2022; 3.1M </p>
     </div>
 </body>
 </html>
