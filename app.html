@@ -3,52 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Original Youtube Copy</title>
+    <title>Arange picture</title>
+    <style>
+        .container {
+            border: 5%;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 30px;
+            border: 2px rgb(116, 114, 114) solid;
+            border-radius: 10px;
+        }
+        .cats-list{
+            /* display: inline-block; */
+            display: flex;
+            align-items: center;
+        }
+        .cat-img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 12px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+        #grey{
+            color: rgb(169, 169, 169);
+        }
+        #text{
+            margin-left: 20px;
+        }
+        .follow{
+            background-color: rgb(24, 119, 242);
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-left: 8px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .coulmn-list{
+            display: flex;
+            display: inline-block;
+            object-fit: cover;
+            align-items: center;
+        }
+        .text-container { /* Highlighted */
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <style>
-        *{
-            background-color: rgb(233, 229, 229);
-        }
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: italic;
-            text-align: center;
-            text-decoration: dotted;
-            text-shadow: 1rem;
-            font-weight: bold;
-            padding: 5px;
-        }
-        .container{
-            display: inline-block;
-            margin-left: 10px;
-        }
-        .images{
-            width: 275px;
-            height: 183px;
-        }
-        #Author,#published{
-            font-size: 12px;
-            color: rgb(67, 64, 64);
-        }
-        /* #Author{
-            margin-bottom: 5px;
-            margin-top: 10px;
-        } */
-
-    </style>
-    <h1>Welcome to Original YouTube</h1>
     <div class="container">
-        <img class="images" src="imgs/1.jpeg" alt="">
-        <p>The sunset is beautiful on the sea!</p>
-        <p id="Author">Mahmoud Kh</p>
-        <p id="published">7 months ago &#x2022; 6.7M </p>
+        <div>
+            <img class="cat-img" src="imgs/1.jpg" alt="" />
+        </div>
+        <div class="text-container"> <!-- Highlighted -->
+            <div id="text">
+                <p>Oliver</p>
+                <div id="grey">
+                    <p>cat</p>
+                    <p>Popular</p>
+                </div>
+            </div>
+            <button class="follow">Follow</button>
+        </div>
     </div>
-    <div class="container">
-        <img class="images" src="imgs/123.jpeg" alt="">
-        <p>Tree in circle on flip down shape</p>
-        <p id="Author">Mark Zen</p>
-        <p id="published">1 month ago &#x2022; 3.1M </p>
+
+    <div class="coulmn-list">
+        <div class="cats-list">
+            <div class="container">
+                <img class="cat-img" src="imgs/1.jpg" alt="">
+                <div class="text-container"> <!-- Highlighted -->
+                    <div id="text">
+                        <p>Oliver</p>
+                        <div id="grey">
+                            <p>the cat</p>
+                            <p>Popular</p>
+                        </div>
+                    </div>
+                    <button class="follow">Follow</button>
+                </div>
+            </div>
+        </div>
+        <div class="cats-list">
+            <div class="Mimi">
+                <img class="cat-img" src="imgs/baldy-cartoon.jpg" alt=""/>
+            </div>
+            <div id="text">
+                <p>Bald Guy</p>
+                <div id="grey">
+                    <p>Sleepy One</p>
+                    <p>Popular</p>
+                </div>
+            </div>
+            <div>
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+        <div class="cats-list">
+            <div class="Rex">
+                <img class="cat-img" src="imgs/3.jpg" alt="">
+            </div>
+            <div id="text">
+                <p>Rex</p>
+                <div id="grey">
+                    <p>Happy Puppy</p>
+                    <p>Popular</p>
+                </div>
+            </div>
+            <div>
+                <button class="follow">Follow</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
