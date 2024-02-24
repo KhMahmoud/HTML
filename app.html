@@ -4,94 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Original Youtube Copy</title>
-</head>
-<body>
     <style>
-        *{
-            background-color: rgb(233, 229, 229);
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        h1{
+        body {
+            background-color: rgb(233, 229, 229);
             font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
             font-style: italic;
             text-align: center;
             text-decoration: dotted;
-            text-shadow: 1rem;
             font-weight: bold;
             padding: 5px;
         }
-        .container{
+        .container {
             display: inline-block;
             margin-left: 10px;
         }
-        .images{
+        .images {
             width: 275px;
             height: 183px;
         }
-        #Author,#published{
+        #Author, #published {
             font-size: 12px;
             color: rgb(67, 64, 64);
         }
-        /* #Author{
-            margin-bottom: 5px;
-            margin-top: 10px;
-        } */
-        .main-page{
+        .main-page {
             margin-left: 70px;
-            /* margin-right: 70px; */
         }
-        #left-bar{
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-        }
-        #upper-bar{
-            width: 30px;
-            height: 30px;
-            margin-left: 50px;
-            /* margin-bottom: 70px; */
-            cursor: pointer;
+        .upper-bar {
             display: flex;
-            flex-direction: row;
+            align-items: center;
+            padding: 10px;
         }
-        #searchBar{
+        .upper-bar img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .upper-bar > div {
+            display: flex;
+            align-items: center;
+        }
+        .upper-bar > div img {
+            width: 100px;
+            /* height: 30px;
+            margin-right: 5px; */
+        }
+        #searchBar {
             border: 0.3px solid grey;
+            flex: 1;
+            padding: 10px;
         }
-        </style>
-    <div>
-        <div id="left-bar">
-            <img src="left-bar/1.svg" alt="">
-            <img src="left-bar/2.svg" alt="">
-            <img src="left-bar/3.svg" alt="">
-            <img src="left-bar/4.svg" alt="">
-            <img src="left-bar/5.svg" alt="">
-            <img src="left-bar/6.svg" alt="">
-            <img src="left-bar/7.svg" alt="">
-        </div>
-        <div id="upper-bar">
-            <img id="logo" src="upper-bar/7.png" alt="">
-            <input type="text" placeholder="Search..." id="searchBar"/>
-            <img src="upper-bar/6.svg" alt="">
-            <img src="upper-bar/2.svg" alt="">
-            <img src="upper-bar/3.svg" alt="">
-            <img src="upper-bar/4.svg" alt="">
-            <img src="upper-bar/5.svg" alt="">
-        </div>
+        .right-side{
+            width: 200px;
+            /* justify-content: right; */
+        }
+    </style>
+</head>
+<body>
+
+<div class="upper-bar">
+    <img src="upper-bar/1.svg" alt="">
+    <img src="upper-bar/youtube.svg" alt="">
+    <input type="text" id="searchBar" placeholder="Search">
+    <img src="upper-bar/6.svg" alt="">
+    <img src="upper-bar/5.svg" alt="">
+    <div class="right-side">
+        <img src="upper-bar/2.svg" alt="">
+        <img src="upper-bar/3.svg" alt="">
+        <img src="upper-bar/4.svg" alt="">
+        <img src="upper-bar/profile-picture.svg" alt="">
     </div>
-    <img src="" alt="">
-    <h1>Welcome to Original YouTube</h1>
-    <div class="main-page">
-        <div class="container">
-            <img class="images" src="imgs/1.jpeg" alt="">
-            <p>The sunset is beautiful on the sea!</p>
-            <p id="Author">Mahmoud Kh</p>
-            <p id="published">7 months ago &#x2022; 6.7M </p>
-        </div>
-        <div class="container">
-            <img class="images" src="imgs/123.jpeg" alt="">
-            <p>Tree in circle on flip down shape</p>
-            <p id="Author">Mark Zen</p>
-            <p id="published">1 month ago &#x2022; 3.1M </p>
-        </div>
+</div>
+
+<div class="main-page">
+    <div class="container">
+        <img class="images" src="imgs/1.jpeg" alt="">
+        <p>The sunset is beautiful on the sea!</p>
+        <p id="Author">Mahmoud Kh</p>
+        <p id="published">7 months ago &#x2022; 6.7M </p>
     </div>
+    <div class="container">
+        <img class="images" src="imgs/123.jpeg" alt="">
+        <p>Tree in circle on flip down shape</p>
+        <p id="Author">Mark Zen</p>
+        <p id="published">1 month ago &#x2022; 3.1M </p>
+    </div>
+</div>
+
 </body>
 </html>
