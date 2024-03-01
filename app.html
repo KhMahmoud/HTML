@@ -64,6 +64,37 @@
             width: 200px;
             /* justify-content: right; */
         }
+        table, tr, th, td, caption {
+            border: 1px solid #242020;
+            font-family: 'Courier New';
+            padding: 0.5rem;
+            /* border-collapse: collapse; */
+        }
+        th{
+            background-color: aquamarine;
+        }
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 5px;
+            font-weight: bold;
+        }
+        #footer{
+            
+            /* justify-content: center; */
+            border-collapse: collapse;
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+        #version{
+            margin-left: 50px;
+            margin-bottom: 100px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #title{
+            background-color: rgb(195, 150, 237);
+        }
     </style>
 </head>
 <body>
@@ -96,6 +127,70 @@
         <p id="published">1 month ago &#x2022; 3.1M </p>
     </div>
 </div>
+
+<table id="footer">
+    <caption id="title">Created by Mahmoud</caption>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>8Am-9:30Am</td>
+            <td>Studying HTML</td>
+        </tr>
+        <tr>
+            <td>9:30Am-10:30Am</td>
+            <td>Studying JS</td>
+        </tr>
+        <tr>
+            <td>10:30Am-11:30Am</td>
+            <td>Studying NodeJs</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Break</td>
+            <td>Play PC games</td>
+        </tr>
+        <tr>
+            <td>Watch Movies</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-weight: bolder; text-align: center; background-color: gray;">Practice on Html & JavaScript</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">
+                Doing this Action for almost Year & Half
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<table id="version">
+    <caption id="title">Another Version of Tables</caption>
+    <tr>
+        <th>Time</th>
+        <th>Activity</th>
+    </tr>
+    <tr>
+        <td>8:00 - 9:00 AM</td>
+        <td>Pray & BreakFast</td>
+    </tr>
+    <tr>
+        <td>9:00 - 10:45 AM</td>
+        <td>Practicing on JavaScript</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Break 10:45 AM - 12:00 PM</td>
+        <td>Eating Lunch and Reading Books</td>
+    </tr>
+    <tr>
+        <td>watching T.V shows</td>
+    </tr>
+</table>
 
 </body>
 </html>
