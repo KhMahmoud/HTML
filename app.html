@@ -29,7 +29,7 @@
             width: 275px;
             height: 183px;
         }
-        #Author, #published {
+        .Author, #published {
             font-size: 12px;
             color: rgb(67, 64, 64);
         }
@@ -75,7 +75,6 @@
         }
         caption{
             font-family: Arial, Helvetica, sans-serif;
-            text-shadow: 5px;
             font-weight: bold;
         }
         #footer{
@@ -92,8 +91,70 @@
             border-collapse: collapse;
             font-family: Arial, Helvetica, sans-serif;
         }
-        #title{
+        .title{
             background-color: rgb(195, 150, 237);
+        }
+        .game {
+            margin-bottom: 400px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        optgroup {
+            font-style: italic;
+        }
+
+        option {
+            font-size: 14px;
+        }
+
+        option[selected] {
+            font-weight: bold;
+            color: #007bff;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #007bff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+            padding: 20px;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            margin-left: 80px;
+            margin-bottom: 50px;
+        }
+        .actions{
+            margin-left:50px;
+
         }
     </style>
 </head>
@@ -117,19 +178,19 @@
     <div class="container">
         <img class="images" src="imgs/1.jpeg" alt="">
         <p>The sunset is beautiful on the sea!</p>
-        <p id="Author">Mahmoud Kh</p>
-        <p id="published">7 months ago &#x2022; 6.7M </p>
+        <p class="author">Mahmoud Kh</p> <!-- Changed ID to class -->
+        <p class="published">7 months ago &#x2022; 6.7M </p> <!-- Changed ID to class -->
     </div>
     <div class="container">
         <img class="images" src="imgs/123.jpeg" alt="">
         <p>Tree in circle on flip down shape</p>
-        <p id="Author">Mark Zen</p>
-        <p id="published">1 month ago &#x2022; 3.1M </p>
+        <p class="author">Mark Zen</p> <!-- Changed ID to class -->
+        <p class="published">1 month ago &#x2022; 3.1M </p> <!-- Changed ID to class -->
     </div>
 </div>
 
 <table id="footer">
-    <caption id="title">Created by Mahmoud</caption>
+    <caption class="title">Created by Mahmoud</caption>
     <thead>
         <tr>
             <th>Time</th>
@@ -170,7 +231,7 @@
 </table>
 
 <table id="version">
-    <caption id="title">Another Version of Tables</caption>
+    <caption class="title">Another Version of Tables</caption>
     <tr>
         <th>Time</th>
         <th>Activity</th>
@@ -191,6 +252,43 @@
         <td>watching T.V shows</td>
     </tr>
 </table>
+
+<form action="#">
+
+    <fieldset>
+        <legend>Game Selection</legend>
+        <div class="game">
+            <label for="Games">Games</label>
+            <select name="Games" id="Games">
+                <optgroup label="Select a Game">
+                    <option value="Cards">Play Cards Games (e.g., Poker, BlackJack)</option>
+                    <option value="ComputerGame">Play Computer Games (e.g., WorldOfWarcraft, LeagueofLeg)</option>
+                    <option value="BoardGame">Play Board Game (e.g., Chess, Scrabble)</option>
+                    <option value="VideoGame">Play Video Games (e.g., Super Mario Bros.)</option>
+                    <option value="Chess">Chess</option>
+                </optgroup>
+                <optgroup label="Other Activities">
+                    <option value="theWitcherThree">The Witcher Three</option>
+                    <option value="red" selected="selected">The Red Dead Redemption Two</option>
+                    <option value="overwatch">OverWatch</option>
+                    <option value="gta5">Grand Theft Auto Five</option>
+                </optgroup>
+            </select>
+        </div>
+    </fieldset>
+    
+
+    <fieldset class="actions">
+        <legend>What activity are you going to do?</legend>
+        <label for="play"><input type="radio" name="activity" id="play">Play</label>
+        <label for="watch"><input type="radio" name="activity" id="watch">Watch</label>
+        <label for="walk"><input type="radio" name="activity" id="walk">Walk</label>
+    </fieldset>
+
+
+    <button type="submit">Submit Activity</button>
+    <button type="reset">Reset Form</button>
+</form>
 
 </body>
 </html>
