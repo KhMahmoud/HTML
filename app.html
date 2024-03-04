@@ -3,292 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Original Youtube Copy</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: rgb(233, 229, 229);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        h1 {
-            font-style: italic;
-            text-align: center;
-            text-decoration: dotted;
-            font-weight: bold;
-            padding: 5px;
-        }
-        .container {
-            display: inline-block;
-            margin-left: 10px;
-        }
-        .images {
-            width: 275px;
-            height: 183px;
-        }
-        .Author, #published {
-            font-size: 12px;
-            color: rgb(67, 64, 64);
-        }
-        .main-page {
-            margin-left: 70px;
-        }
-        .upper-bar {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-        }
-        .upper-bar img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }
-        .upper-bar > div {
-            display: flex;
-            align-items: center;
-        }
-        .upper-bar > div img {
-            width: 100px;
-            /* height: 30px;
-            margin-right: 5px; */
-        }
-        #searchBar {
-            border: 0.3px solid grey;
-            flex: 1;
-            padding: 10px;
-        }
-        .right-side{
-            width: 200px;
-            /* justify-content: right; */
-        }
-        table, tr, th, td, caption {
-            border: 1px solid #242020;
-            font-family: 'Courier New';
-            padding: 0.5rem;
-            /* border-collapse: collapse; */
-        }
-        th{
-            background-color: aquamarine;
-        }
-        caption{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-        }
-        #footer{
-            
-            /* justify-content: center; */
-            border-collapse: collapse;
-            margin-left: 30px;
-            margin-top: 30px;
-            margin-bottom: 100px;
-        }
-        #version{
-            margin-left: 50px;
-            margin-bottom: 100px;
-            border-collapse: collapse;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .title{
-            background-color: rgb(195, 150, 237);
-        }
-        .game {
-            margin-bottom: 400px;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-        }
-
-        select {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        optgroup {
-            font-style: italic;
-        }
-
-        option {
-            font-size: 14px;
-        }
-
-        option[selected] {
-            font-weight: bold;
-            color: #007bff;
-        }
-        fieldset {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-        }
-
-        legend {
-            font-weight: bold;
-            margin-bottom: 10px;
-            padding: 0 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button{
-            background-color: #007bff;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            text-align: center;
-            border-radius: 20px;
-            cursor: pointer;
-            padding: 20px;
-            /* display: flex; */
-            align-items: center;
-            justify-content: center;
-            margin-left: 80px;
-            margin-bottom: 50px;
-        }
-        .actions{
-            margin-left:50px;
-
-        }
-    </style>
+    <title>Practice on HTML</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+<style>
 
-<div class="upper-bar">
-    <img src="upper-bar/1.svg" alt="">
-    <img src="upper-bar/youtube.svg" alt="">
-    <input type="text" id="searchBar" placeholder="Search">
-    <img src="upper-bar/6.svg" alt="">
-    <img src="upper-bar/5.svg" alt="">
-    <div class="right-side">
-        <img src="upper-bar/2.svg" alt="">
-        <img src="upper-bar/3.svg" alt="">
-        <img src="upper-bar/4.svg" alt="">
-        <img src="upper-bar/profile-picture.svg" alt="">
-    </div>
-</div>
+    body {
+        min-height: 100vh;
+        max-width: 580px;
+        margin: 0 auto;
+        padding: 1rem;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+    }
 
-<div class="main-page">
-    <div class="container">
-        <img class="images" src="imgs/1.jpeg" alt="">
-        <p>The sunset is beautiful on the sea!</p>
-        <p class="author">Mahmoud Kh</p> <!-- Changed ID to class -->
-        <p class="published">7 months ago &#x2022; 6.7M </p> <!-- Changed ID to class -->
-    </div>
-    <div class="container">
-        <img class="images" src="imgs/123.jpeg" alt="">
-        <p>Tree in circle on flip down shape</p>
-        <p class="author">Mark Zen</p> <!-- Changed ID to class -->
-        <p class="published">1 month ago &#x2022; 3.1M </p> <!-- Changed ID to class -->
-    </div>
-</div>
+    th, td, caption {
+        border: 1px solid #333;
+        font-family: 'Courier New', Courier, monospace;
+        border-collapse: separate;
+        padding: 0.5rem;
+    }
+    abbr{
+        cursor: pointer;
+    }
+</style>
+    <header>
+        <h1>Welcome to the little taco shop</h1>
+        <ul>
+            <li>
+                <a href="#AboutLTS">About LTS</a>
+            </li>
+            <li>
+                <a href="#Menu">Our Menu</a>
+            </li>
+            <li>
+                <a href="#">Store Hours</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+        <figure>
+            <img src="img/tacos_and_drink_400x267.png" alt="">
+            <p>Taco and Drinks</p>
+        </figure>
+        <hr>
+        <article id="AboutLTS">
+            <h3>About <abbr title="The Little Taco Shop">LTS</abbr></h3>
+            <p>
+                <abbr title="The Little Taco Shop">LTS</abbr> was founded in 2022. Our shop was built from a <strong>love of tacos</strong> 🌮🌮🌮 We hope
+                our shop adds a unique and interesting place to our little town.
+            </p>
+            <p>
+                <h3>Taco Trivia</h3>
+            </p>
+            <aside>
+                <details>
+                    <summary>When did tacos first a ear in the United States?</summary>
+                    <p>
+                        Jeffrey M. Pilcher, taco historian and professor of history at the University of Minnesota,
+                        says the earliest mention of tacos in the United States are in a newspaper from 1905.
+                        (Source:<a target="_blank" href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/" style="text-decoration: none;">Smithsonian Magazine</a>)
+                    </p>
+                </details>
+            </aside>
+        </article>
+    </header> 
+    <hr>
+    <article id="Menu">
+        <h3>Our Menu</h3>
+        <table>
+            <caption>our Tacos</caption>
+            <thead>
+                <tr>
+                    <th>Tacos</th>
+                    <th>Oty</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3">Crunchy</th>
+                    <td>1</td>
+                    <td>1.5$</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2.5$</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>6.5$</td>
+                </tr>
 
-<table id="footer">
-    <caption class="title">Created by Mahmoud</caption>
-    <thead>
-        <tr>
-            <th>Time</th>
-            <th>Activity</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>8Am-9:30Am</td>
-            <td>Studying HTML</td>
-        </tr>
-        <tr>
-            <td>9:30Am-10:30Am</td>
-            <td>Studying JS</td>
-        </tr>
-        <tr>
-            <td>10:30Am-11:30Am</td>
-            <td>Studying NodeJs</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Break</td>
-            <td>Play PC games</td>
-        </tr>
-        <tr>
-            <td>Watch Movies</td>
-        </tr>
-        <tr>
-            <td colspan="2" style="font-weight: bolder; text-align: center; background-color: gray;">Practice on Html & JavaScript</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="2">
-                Doing this Action for almost Year & Half
-            </td>
-        </tr>
-    </tfoot>
-</table>
-
-<table id="version">
-    <caption class="title">Another Version of Tables</caption>
-    <tr>
-        <th>Time</th>
-        <th>Activity</th>
-    </tr>
-    <tr>
-        <td>8:00 - 9:00 AM</td>
-        <td>Pray & BreakFast</td>
-    </tr>
-    <tr>
-        <td>9:00 - 10:45 AM</td>
-        <td>Practicing on JavaScript</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Break 10:45 AM - 12:00 PM</td>
-        <td>Eating Lunch and Reading Books</td>
-    </tr>
-    <tr>
-        <td>watching T.V shows</td>
-    </tr>
-</table>
-
-<form action="#">
-
-    <fieldset>
-        <legend>Game Selection</legend>
-        <div class="game">
-            <label for="Games">Games</label>
-            <select name="Games" id="Games">
-                <optgroup label="Select a Game">
-                    <option value="Cards">Play Cards Games (e.g., Poker, BlackJack)</option>
-                    <option value="ComputerGame">Play Computer Games (e.g., WorldOfWarcraft, LeagueofLeg)</option>
-                    <option value="BoardGame">Play Board Game (e.g., Chess, Scrabble)</option>
-                    <option value="VideoGame">Play Video Games (e.g., Super Mario Bros.)</option>
-                    <option value="Chess">Chess</option>
-                </optgroup>
-                <optgroup label="Other Activities">
-                    <option value="theWitcherThree">The Witcher Three</option>
-                    <option value="red" selected="selected">The Red Dead Redemption Two</option>
-                    <option value="overwatch">OverWatch</option>
-                    <option value="gta5">Grand Theft Auto Five</option>
-                </optgroup>
-            </select>
-        </div>
-    </fieldset>
-    
-
-    <fieldset class="actions">
-        <legend>What activity are you going to do?</legend>
-        <label for="play"><input type="radio" name="activity" id="play">Play</label>
-        <label for="watch"><input type="radio" name="activity" id="watch">Watch</label>
-        <label for="walk"><input type="radio" name="activity" id="walk">Walk</label>
-    </fieldset>
-
-
-    <button type="submit">Submit Activity</button>
-    <button type="reset">Reset Form</button>
-</form>
-
+                <tr>
+                    <th rowspan="3">Soft</th>
+                    <td>1</td>
+                    <td>20.5$</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>22.5$</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>23.5$</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Chips & Salsa $2</td>
+                </tr>
+            </tfoot>
+            <tbody>
+            </tbody>
+        </table>
+    </article>
+    <ul>
+        <li>
+            <a href="#">Back To Top</a>
+        </li>
+    </ul>
+    <hr> 
+    <footer>
+        <p>
+            CopyRight &copy; 2024 The Little Taco Shop<br />
+        </p>
+    </footer> 
 </body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="contact.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        body {
+        min-height: 100vh;
+        max-width: 580px;
+        margin: 0 auto;
+        padding: 1rem;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+    }
+    </style>
+    <article>
+        <h1>Contact Us</h1>
+        <ul>
+            <li><a href="app.html">Home</a></li>
+            <li><a href="#LTS">About LTS</a></li>
+            <li><a href="#Menu">Our Menu</a></li>
+            <li><a href="store.html">Store Hours</a></li>
+        </ul>
+        <figure>
+            <img src="img/tacos_close_up_400x260.png" alt="" title="Tacos Close Up" width="300" height="169">
+            <p>Little Taco Shop Tacos</p>
+        </figure>
+        <hr>
+        <h3>Our Contact Form</h3>
+        <fieldset>
+            <legend>Send Us A Message:</legend>
+            <form action="#">
+                <p>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" placeholder="UserName" autocomplete required>
+                </p>
+                <br>
+                <p>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Email" autocomplete required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                </p>
+                <br>
+                <label for="message">Message:</label>
+                <p>
+                    <textarea id="message" rows="4" cols="50" autocomplete required placeholder="Text Area"></textarea>
+                </p>
+                <button type="submit">Submit</button>
+                <button type="reset">reset</button>
+                <br>
+            </form>
+        </fieldset>
+        <hr>
+        <h3>Our Location</h3>
+        <p>
+            555 Taco Temptation Lane, Suite T
+            Kansas City, MO 55555-5555  
+        </p>
+        <label for="phone">Phone:</label>
+        <form action="#">
+            <input type="text" id="phone" name="phone" required pattern="\d{3}-\d{3}-\d{4}">
+            <button type="submit">Call Now!</button>
+        </form>
+    </article>
+    <hr>
+    CopyRight &copy; The Little Taco Shop
+</body>
+</html>
